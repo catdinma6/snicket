@@ -1,0 +1,157 @@
+<!DOCtype HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Teams</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/blueTheme.css"/> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/_app.scss">
+    <link rel="stylesheet" href="scss/_base.scss">
+    <link rel="stylesheet" href="scss/_fullCalendar.scss">
+    <link rel="stylesheet" href="scss/_home.scss">
+    <link rel="stylesheet" href="scss/_responsive.scss">
+    <link rel="stylesheet" href="scss/_variable.scss">
+    <link rel="stylesheet" href="scss/blackTheme.scss">
+    <link rel="stylesheet" href="scss/blueTheme.scss">
+    <link rel="stylesheet" href="scss/glTheme.scss">
+    <link rel="stylesheet" href="scss/greenTheme.scss">
+    <link rel="stylesheet" href="scss/index.scss">
+    <link rel="stylesheet" href="scss/lavenderTheme.scss">
+    <link rel="stylesheet" href="scss/paytm.scss">
+    <link rel="stylesheet" href="scss/yellowTheme.scss">
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <header>
+        <!-- Header Menu Section -->
+<nav class="navbar navbar-default navbar-inverse">
+ <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                      </button>
+                    </div>
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#"><img src="media/snicket_logo_png.png" height="50px" width="150px" id="nav-img"></a>
+                    </div>
+                      
+                   <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                      <li id="active" id="home-color"><a href="main_home.html" style="color: #fff">HOME</a></li>
+                        <li><a href="snicketapp.html">SNICKET APP</a></li>
+                        <li class="menu-text"><a href="about.html" style="color:#fff">ABOUT  US</a></li>
+                        <li class="menu-text"><a href="widgets.html" style="color:#fff">COMPETITIONS</a></li>
+                        <li><a href="profile.html">PLAYERS</a></li>
+                        <li><a href="teams.html">TEAMS</a></li>
+
+                    </ul>
+                    
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html" style="color:#fff"><span class="glyphicon glyphicon-user glyphi"></span> Sign Up</a></li>
+                        <li><a href="main_home.html" style="color:#fff"><span class="glyphicon glyphicon-log-in glyphi"></span> Sign In</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+            </nav>
+      </header>
+
+    <script>
+                            $(document).ready(function () {
+                                $("#myInput").on("keyup", function () {
+                                    var value = $(this).val().toLowerCase();
+                                    $("#myTable tr").filter(function () {
+                                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                    });
+                                });
+                            });
+                        </script>
+      
+      
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container search-table">
+            <div class="search-box">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Search All Teams</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Search all teams ">                     <button type="submit" style="color: green">Search</button>
+                     
+                    </div> 
+                </div>
+            </div>
+            <div class="search-list">
+                <h3>8 Records Found</h3>
+                <table class="table" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Club Name</th>
+                            <th>League</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    
+                    <tr>
+                        <td>Ibeju Lekki Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>GCIOB Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>FGC Warri Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>Lagos Asians Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>Foundation Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>Howzat Pioneers Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>Ogun Rocks Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    <tr>
+                        <td>Rising Stars Cricket Club</td>
+                        <td>CCC League</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+<!--
+  <div class= "profile-image">
+        <img src="media/277487.jpg" width="100%" height="100%">
+        </div>
+-->
+         
+    </body>
+</html>
